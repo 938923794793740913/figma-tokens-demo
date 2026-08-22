@@ -3,66 +3,87 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Figma Tokens Auto-Sync Demo</title>
-  <link rel="stylesheet" href="./tokens.css">
+  <title>Noble Finances - Figma Tokens Live Sync</title>
+  <link rel="stylesheet" href="./globals.css">
   <style>
     body {
-      background-color: var(--color-bg, #0f172a);
-      color: var(--color-text, #f8fafc);
+      background-color: var(--color-bg-main, #a0f1bd);
+      color: var(--color-text-main, #2d4f20);
       font-family: system-ui, -apple-system, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
       margin: 0;
-      transition: all 0.3s ease;
+      padding: 20px;
+      transition: all 0.4s ease;
     }
 
     .card {
-      background-color: var(--color-cardBg, #1e293b);
-      border-radius: var(--radius-card, 16px);
+      background-color: var(--color-bg-dark, #2e4f21);
+      color: var(--color-text-light, #ffffff);
+      border-radius: var(--radius-card, 20px);
       padding: var(--spacing-lg, 24px);
-      max-width: 320px;
+      max-width: 360px;
       width: 100%;
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
       border: 1px solid rgba(255, 255, 255, 0.1);
-      transition: all 0.3s ease;
+      transition: all 0.4s ease;
     }
 
-    .card-title {
+    .badge {
+      background-color: var(--color-accent, #d2f8dc);
+      color: var(--color-text-main, #2d4f20);
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-bottom: var(--spacing-md, 16px);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .title {
       margin: 0 0 var(--spacing-sm, 8px) 0;
-      font-size: 1.25rem;
+      font-size: 1.5rem;
+      font-weight: 800;
+      line-height: 1.2;
     }
 
-    .card-desc {
-      color: var(--color-textMuted, #94a3b8);
-      font-size: 0.875rem;
+    .desc {
+      color: var(--color-text-muted, #7d9276);
+      font-size: 0.9rem;
+      line-height: 1.5;
       margin-bottom: var(--spacing-lg, 24px);
     }
 
     .btn {
-      background-color: var(--color-primary, #3b82f6);
-      color: #ffffff;
+      background-color: var(--color-bg-main, #a0f1bd);
+      color: var(--color-text-main, #2d4f20);
       border: none;
       padding: var(--spacing-md, 16px) var(--spacing-lg, 24px);
-      border-radius: var(--radius-btn, 8px);
-      font-weight: 600;
+      border-radius: var(--radius-btn, 12px);
+      font-weight: 700;
+      font-size: 1rem;
       cursor: pointer;
       width: 100%;
       transition: all 0.3s ease;
+      box-shadow: 0 4px 14px 0 rgba(0,0,0,0.1);
     }
 
     .btn:hover {
-      opacity: 0.9;
-      transform: translateY(-1px);
+      transform: translateY(-2px);
+      opacity: 0.95;
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <h2 class="card-title">Figma Auto-Sync</h2>
-    <p class="card-desc">این کامپوننت مستقیماً متغیرهای رنگ و ابعاد خود را از توکن‌های فیگما دریافت می‌کند.</p>
-    <button class="btn">دکمه اکشن فیگما</button>
+    <span class="badge">Noble Finances</span>
+    <h1 class="title">Financial Clarity You Can Trust</h1>
+    <p class="desc">آزمایش زنده همگام‌سازی اتوماتیک توکن‌های فیگما با ایجنت هرمس.</p>
+    <button class="btn">Connect with experts</button>
   </div>
 </body>
 </html>
