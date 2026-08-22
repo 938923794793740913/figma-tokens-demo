@@ -3,76 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Figma Tokens Comprehensive Live Demo</title>
+  <title>Pure Figma Canvas Element</title>
   <link rel="stylesheet" href="./globals.css">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      background-color: #0f172a;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #ffffff;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      padding: 20px;
-    }
-    .demo-card {
-      background-color: var(--color-surface-bg, #ffffff);
-      color: var(--color-text-main, #0f172a);
-      padding: var(--spacing-padding-lg, 32px);
-      border-radius: var(--radius-card, 20px);
-      box-shadow: var(--shadow-elevation-lg);
-      max-width: 500px;
-      width: 100%;
-      text-align: center;
-      transition: all 0.4s ease;
-    }
-    .badge {
-      background-color: #f1f5f9;
-      color: var(--color-primary, #c11f1f);
-      padding: 6px 16px;
-      border-radius: 20px;
-      font-weight: 700;
-      font-size: 0.85rem;
-      display: inline-block;
-      margin-bottom: var(--spacing-gap-md, 16px);
-      letter-spacing: 0.05em;
-    }
-    .title {
-      font-size: var(--font-size-title, 2rem);
-      font-weight: var(--font-weight-bold, 800);
-      margin-bottom: 12px;
-    }
-    .desc {
-      color: var(--color-text-muted, #64748b);
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 28px;
     }
     .figma-element {
-      width: var(--rect-width, 100%);
-      max-width: 100%;
-      height: var(--rect-height, 120px);
-      background-color: var(--color-primary, #c11f1f);
-      border-radius: var(--radius-button, 24px);
-      box-shadow: var(--shadow-button-glow);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: #ffffff;
-      font-weight: 700;
-      font-size: 1.1rem;
-      margin: 0 auto;
+      width: var(--rect-width, 546px);
+      height: var(--rect-height, 233px);
+      background-color: var(--rect-color, #c11f1f);
+      border-radius: var(--rect-radius, 24px);
       transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
   </style>
 </head>
 <body>
-  <div class="demo-card">
-    <span class="badge">FIGMA DESIGN TOKENS ENGINE</span>
-    <h1 class="title">Live Token Sync</h1>
-    <p class="desc">تمام ۵ دسته‌ی متغیرها (رنگ، گردی گوشه‌ها، ابعاد، فونت و سایه‌ها) مستقیماً با فیگما همگام هستند.</p>
-    <div class="figma-element">المان متغیر فیگما</div>
-  </div>
+  <div class="figma-element"></div>
 </body>
 </html>
