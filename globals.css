@@ -1,6 +1,6 @@
 :root {
-  --rect-color: #c11f1f;
-  --rect-width: 546px;
-  --rect-height: 233px;
-  --rect-radius: 24px;
+  --figma-bg: #ffffff;
+  --figma-width: 1440.0px;
+  --figma-height: 1024.0px;
+  --figma-radius: 16px;
 }
