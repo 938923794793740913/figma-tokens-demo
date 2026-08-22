@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Figma Pixel-Perfect Render</title>
+  <title>Figma Real Vector Import</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -12,22 +12,48 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      padding: 40px;
+      padding: 20px;
     }
     .desktop-canvas {
       position: relative;
-      width: 1440.0px;
-      height: 1024.0px;
+      width: 100%;
+      max-width: 1440.0px;
+      aspect-ratio: 1440 / 1024;
       background-color: #ffffff;
       box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
       border-radius: 8px;
       overflow: hidden;
     }
+    .polygon1 {
+      position: absolute;
+      left: 7.986111111111111%;
+      top: 6.93359375%;
+      width: 21.38888888888889%;
+      height: auto;
+    }
+    .polygon2 {
+      position: absolute;
+      left: 72.70833333333333%;
+      top: 6.93359375%;
+      width: 21.38888888888889%;
+      height: auto;
+    }
+    .rectangle1 {
+      position: absolute;
+      left: 31.041666666666668%;
+      top: 38.671875%;
+      width: 37.916666666666664%;
+      height: 22.75390625%;
+      background-color: #c11f1f;
+      border-radius: 24px;
+    }
   </style>
 </head>
 <body>
   <div class="desktop-canvas">
-    <div style="position: absolute; left: 447.0px; top: 396.0px; width: 546.0px; height: 233.0px; background-color: rgba(193, 31, 31, 1.0); border-radius: 24.0px;"></div><div style="position: absolute; left: 115.0px; top: 71.0px; width: 308.0px; height: 325.0px; background-color: rgba(217, 217, 217, 1.0); border-radius: 0px;"></div><div style="position: absolute; left: 1047.0px; top: 71.0px; width: 308.0px; height: 325.0px; background-color: rgba(217, 217, 217, 1.0); border-radius: 0px;"></div>
+    <img src="https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/27377c6b-be44-46d4-882d-81deff0c067f" class="polygon1" alt="Polygon 1" />
+    <img src="https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/fc1a6e91-e9e5-4053-9523-0a2785a978ad" class="polygon2" alt="Polygon 2" />
+    <div class="rectangle1"></div>
   </div>
 </body>
 </html>
