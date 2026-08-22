@@ -3,200 +3,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noble Finances - Direct Figma Layout Import</title>
+  <title>Noble Finances - Clean Figma Sync</title>
   <link rel="stylesheet" href="./globals.css">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: system-ui, -apple-system, sans-serif;
-      width: 100%;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--color-bg-main, #a0f1bd);
+      color: var(--color-text-main, #2d4f20);
+      display: flex;
+      justify-content: center;
+      align-items: center;
       min-height: 100vh;
-      background-color: #f9f9f9;
-      color: #2d4f20;
+      padding: 20px;
     }
-    /* Ensure responsiveness */
-    .frame-desktop {
-      max-width: 1440px;
-      margin: 0 auto;
+    .hero-card {
+      background-color: var(--color-bg-dark, #2e4f21);
+      color: var(--color-text-light, #ffffff);
+      padding: 48px;
+      border-radius: var(--radius-card, 20px);
+      max-width: 540px;
       width: 100%;
-      overflow-x: hidden;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.2);
     }
-    .frame-nav {
-      justify-content: space-between;
+    .badge {
+      background-color: var(--color-accent, #d2f8dc);
+      color: var(--color-text-main, #2d4f20);
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 800;
+      margin-bottom: 16px;
+      line-height: 1.2;
+    }
+    p {
+      color: var(--color-text-muted, #7d9276);
+      font-size: 1rem;
+      margin-bottom: 32px;
+      line-height: 1.6;
+    }
+    .btn {
+      background-color: var(--color-bg-main, #a0f1bd);
+      color: var(--color-text-main, #2d4f20);
+      border: none;
+      padding: 16px 32px;
+      border-radius: var(--radius-btn, 12px);
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
       width: 100%;
+      transition: transform 0.2s ease;
+    }
+    .btn:hover {
+      transform: scale(1.02);
     }
   </style>
 </head>
 <body>
-<div class="frame-desktop" style="display: flex; flex-direction: column; background-color: rgba(255, 255, 255, 1.0);">
-<div class="frame-nav" style="display: flex; flex-direction: row; align-items: center; gap: 262.0px; padding: 32.0px 40.0px 32.0px 40.0px; background-color: rgba(160, 241, 189, 1.0);">
-<div class="frame-logo" style="display: flex; flex-direction: column; gap: 8.0px;">
-<div class="frame-noble-finances" style="background-color: rgba(45, 79, 32, 1.0);">
-
-</div>
-</div><div class="frame-nav-labels" style="display: flex; flex-direction: row; align-items: center; gap: 20.0px;">
-<span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 12.0px; font-weight: 500; color: inherit;">Services</span><div class="frame-button-on-dark" style="display: flex; flex-direction: row; align-items: center; gap: 4.0px; padding: 12.0px 12.0px 12.0px 12.0px; background-color: rgba(45, 79, 32, 1.0); border-radius: 51.57455062866211px;">
-<span class="figma-text" style="background-color: rgba(255, 255, 255, 1.0); font-size: 12.0px; font-weight: 500; color: inherit;">Book an appointment</span>
-</div>
-</div>
-</div><div class="frame-main" style="display: flex; flex-direction: column;">
-<div class="frame-hero-section" style="display: flex; flex-direction: column; gap: 100.0px; padding: 100.0px 40.0px 100.0px 40.0px; background-color: rgba(160, 241, 189, 1.0);">
-<div class="frame-content" style="display: flex; flex-direction: row; align-items: center; gap: 80.0px;">
-<div class="frame-block" style="display: flex; flex-direction: column; gap: 50.0px;">
-<div class="frame-text" style="display: flex; flex-direction: column; gap: 24.0px;">
-<span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 80.0px; font-weight: 400; color: inherit;">Financial Clarity You Can Trust</span><span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 16.0px; font-weight: 400; color: inherit;">Trusted financial guidance for every stage of life and business since 1987</span>
-</div><div class="frame-button-on-dark" style="display: flex; flex-direction: row; align-items: center; gap: 4.0px; padding: 12.0px 12.0px 12.0px 12.0px; background-color: rgba(45, 79, 32, 1.0); border-radius: 51.57455062866211px;">
-<span class="figma-text" style="background-color: rgba(255, 255, 255, 1.0); font-size: 12.0px; font-weight: 500; color: inherit;">Connect with our experts</span>
-</div>
-</div><div class="frame-image">
-
-</div>
-</div>
-</div><div class="frame-services-section" style="display: flex; flex-direction: column; background-color: rgba(249, 249, 249, 1.0);">
-<div class="frame-intro-section" style="display: flex; flex-direction: column; gap: 106.0px; padding: 120.0px 40.0px 100.0px 40.0px;">
-<div class="frame-content" style="display: flex; flex-direction: column; gap: 28.035518646240234px;">
-<span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 15.0px; font-weight: 500; color: inherit;">Services</span><span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 60.0px; font-weight: 400; color: inherit;">Let us handle the numbers,  so you can handle your success.</span><span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 16.0px; font-weight: 400; color: inherit;">Serving individuals and small businesses since 1987</span><div class="frame-button-on-light" style="display: flex; flex-direction: row; align-items: center; gap: 4.0px; padding: 12.0px 12.0px 12.0px 12.0px; background-color: rgba(45, 79, 32, 1.0); border-radius: 51.57455062866211px;">
-<span class="figma-text" style="background-color: rgba(255, 255, 255, 1.0); font-size: 12.0px; font-weight: 500; color: inherit;">Schedule a call</span>
-</div>
-</div>
-</div><div class="frame-section-1" style="display: flex; flex-direction: row; align-items: center; gap: 192.0px; padding: 20.0px 0px 20.0px 20.0px;">
-<div class="frame-card" style="display: flex; flex-direction: row; align-items: center; gap: 70.0px; padding: 80.0px 100.0px 80.0px 80.0px; background-color: rgba(210, 248, 220, 1.0); border-radius: 20.0px;">
-<div class="frame-image">
-
-</div><div class="frame-content" style="display: flex; flex-direction: column; gap: 70.0px;">
-<div class="frame-text" style="display: flex; flex-direction: column; gap: 40.0px;">
-<span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 40.0px; font-weight: 400; color: inherit;">Tax Preparation & Filing</span><span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 16.0px; font-weight: 400; color: inherit;">Accurately prepare and file personal and business tax returns to maximize deductions and ensure compliance.</span>
-</div><div class="frame-labels" style="display: flex; flex-direction: row; align-items: center; gap: 10.0px;">
-<div class="frame-labels" style="display: flex; flex-direction: row; align-items: center; gap: 4.0px; padding: 12.0px 12.0px 12.0px 12.0px; background-color: rgba(255, 255, 255, 1.0); border-radius: 8.0px;">
-<span class="figma-text" style="background-color: rgba(79, 99, 72, 1.0); font-size: 12.0px; font-weight: 500; color: inherit;">1099 taxes</span>
-</div><div class="frame-labels" style="display: flex; flex-direction: row; align-items: center; gap: 4.0px; padding: 12.0px 12.0px 12.0px 12.0px; background-color: rgba(255, 255, 255, 1.0); border-radius: 8.0px;">
-<span class="figma-text" style="background-color: rgba(79, 99, 72, 1.0); font-size: 12.0px; font-weight: 500; color: inherit;">Dependents</span>
-</div><div class="frame-labels" style="display: flex; flex-direction: row; align-items: center; gap: 4.0px; padding: 12.0px 12.0px 12.0px 12.0px; background-color: rgba(255, 255, 255, 1.0); border-radius: 8.0px;">
-<span class="figma-text" style="background-color: rgba(79, 99, 72, 1.0); font-size: 12.0px; font-weight: 500; color: inherit;">Trust Taxes</span>
-</div>
-</div>
-</div>
-</div>
-</div><div class="frame-section-2" style="display: flex; flex-direction: row; align-items: center; gap: 188.0px; padding: 20.0px 20.0px 20.0px 0px;">
-<div class="frame-card" style="display: flex; flex-direction: row; align-items: center; gap: 70.0px; padding: 80.0px 80.0px 80.0px 80.0px; background-color: rgba(210, 248, 220, 1.0); border-radius: 20.0px;">
-<div class="frame-content" style="display: flex; flex-direction: column; gap: 70.0px;">
-<div class="frame-text" style="display: flex; flex-direction: column; gap: 40.0px;">
-<span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 40.0px; font-weight: 400; color: inherit;">IRS Audit Assistance</span><span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 16.0px; font-weight: 400; color: inherit;">Offer expert guidance and representation to resolve tax audits and disputes with confidence.</span>
-</div><div class="frame-labels" style="display: flex; flex-direction: row; align-items: center; gap: 10.0px;">
-<div class="frame-labels" style="display: flex; flex-direction: row; align-items: center; gap: 4.0px; padding: 12.0px 12.0px 12.0px 12.0px; background-color: rgba(255, 255, 255, 1.0); border-radius: 8.0px;">
-<span class="figma-text" style="background-color: rgba(79, 99, 72, 1.0); font-size: 12.0px; font-weight: 500; color: inherit;">1099 taxes</span>
-</div><div class="frame-labels" style="display: flex; flex-direction: row; align-items: center; gap: 4.0px; padding: 12.0px 12.0px 12.0px 12.0px; background-color: rgba(255, 255, 255, 1.0); border-radius: 8.0px;">
-<span class="figma-text" style="background-color: rgba(79, 99, 72, 1.0); font-size: 12.0px; font-weight: 500; color: inherit;">Dependents</span>
-</div><div class="frame-labels" style="display: flex; flex-direction: row; align-items: center; gap: 4.0px; padding: 12.0px 12.0px 12.0px 12.0px; background-color: rgba(255, 255, 255, 1.0); border-radius: 8.0px;">
-<span class="figma-text" style="background-color: rgba(79, 99, 72, 1.0); font-size: 12.0px; font-weight: 500; color: inherit;">Trust Taxes</span>
-</div>
-</div>
-</div><div class="frame-image">
-
-</div>
-</div>
-</div><div class="frame-section-3" style="display: flex; flex-direction: row; align-items: center; gap: 137.0px; padding: 20.0px 0px 20.0px 20.0px;">
-<div class="frame-card" style="display: flex; flex-direction: row; align-items: center; gap: 70.0px; padding: 80.0px 80.0px 80.0px 80.0px; background-color: rgba(210, 248, 220, 1.0); border-radius: 20.0px;">
-<div class="frame-image">
-
-</div><div class="frame-content" style="display: flex; flex-direction: column; gap: 70.0px;">
-<div class="frame-text" style="display: flex; flex-direction: column; gap: 40.0px;">
-<span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 40.0px; font-weight: 400; color: inherit;">Bookkeeping & Accounting</span><span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 16.0px; font-weight: 400; color: inherit;">Maintain organized financial records and provide clear reports to support business growth and financial health.</span>
-</div><div class="frame-labels" style="display: flex; flex-direction: row; align-items: center; gap: 10.0px;">
-<div class="frame-labels" style="display: flex; flex-direction: row; align-items: center; gap: 4.0px; padding: 12.0px 12.0px 12.0px 12.0px; background-color: rgba(255, 255, 255, 1.0); border-radius: 8.0px;">
-<span class="figma-text" style="background-color: rgba(79, 99, 72, 1.0); font-size: 12.0px; font-weight: 500; color: inherit;">1099 taxes</span>
-</div><div class="frame-labels" style="display: flex; flex-direction: row; align-items: center; gap: 4.0px; padding: 12.0px 12.0px 12.0px 12.0px; background-color: rgba(255, 255, 255, 1.0); border-radius: 8.0px;">
-<span class="figma-text" style="background-color: rgba(79, 99, 72, 1.0); font-size: 12.0px; font-weight: 500; color: inherit;">Dependents</span>
-</div><div class="frame-labels" style="display: flex; flex-direction: row; align-items: center; gap: 4.0px; padding: 12.0px 12.0px 12.0px 12.0px; background-color: rgba(255, 255, 255, 1.0); border-radius: 8.0px;">
-<span class="figma-text" style="background-color: rgba(79, 99, 72, 1.0); font-size: 12.0px; font-weight: 500; color: inherit;">Trust Taxes</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="frame-testimonial-section" style="display: flex; flex-direction: column; gap: 10.0px; padding: 100.0px 100.0px 100.0px 100.0px; background-color: rgba(249, 249, 249, 1.0);">
-<div class="frame-carousel-desktop-tablet" style="display: flex; flex-direction: column; gap: 120.0px;">
-<span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 60.0px; font-weight: 400; color: inherit;">Hear From Our Happy Clients</span><div class="frame-quotes" style="display: flex; flex-direction: row; align-items: center; gap: 100.0px;">
-<div class="frame-titles" style="display: flex; flex-direction: column; border-radius: 20.0px;">
-<div class="frame-component-1" style="display: flex; flex-direction: column; gap: 30.0px; padding: 20.0px 30.0px 20.0px 30.0px; background-color: rgba(46, 79, 33, 1.0); border-radius: 8.0px;">
-<div class="frame-text" style="display: flex; flex-direction: column; gap: 16.0px; padding: 20.0px 0px 20.0px 0px;">
-<span class="figma-text" style="background-color: rgba(255, 255, 255, 1.0); font-size: 18.0px; font-weight: 400; color: inherit;">Graphic Designer</span><span class="figma-text" style="background-color: rgba(212, 228, 207, 1.0); font-size: 12.0px; font-weight: 500; color: inherit;">Ontario, Canada</span>
-</div>
-</div><div class="frame-component-1" style="display: flex; flex-direction: column; gap: 30.0px; padding: 20.0px 30.0px 20.0px 30.0px; border-radius: 8.0px;">
-<div class="frame-text" style="display: flex; flex-direction: column; gap: 16.0px; padding: 20.0px 0px 20.0px 0px;">
-<span class="figma-text" style="background-color: rgba(79, 99, 72, 1.0); font-size: 18.0px; font-weight: 400; color: inherit;">Commercial Photographer</span><span class="figma-text" style="background-color: rgba(79, 99, 72, 1.0); font-size: 12.0px; font-weight: 500; color: inherit;">Ontario, Canada</span>
-</div>
-</div><div class="frame-component-2" style="display: flex; flex-direction: column; gap: 30.0px; padding: 20.0px 30.0px 20.0px 30.0px; border-radius: 8.0px;">
-<div class="frame-text" style="display: flex; flex-direction: column; gap: 16.0px; padding: 20.0px 0px 20.0px 0px;">
-<span class="figma-text" style="background-color: rgba(79, 99, 72, 1.0); font-size: 18.0px; font-weight: 400; color: inherit;">Stylist</span><span class="figma-text" style="background-color: rgba(79, 99, 72, 1.0); font-size: 12.0px; font-weight: 500; color: inherit;">Austin Texas</span>
-</div>
-</div>
-</div><div class="frame-quotes" style="display: flex; flex-direction: column; gap: 50.0px; padding: 0px 30.0px 0px 40.0px;">
-<span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 30.0px; font-weight: 400; color: inherit;">"Managing my taxes as a freelancer used to be overwhelming, but Noble Finance made it effortless.”</span><div class="frame-byline" style="display: flex; flex-direction: row; align-items: center; gap: 28.0px;">
-<div class="frame-image" style="border-radius: 16.0px;">
-
-</div><span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 16.0px; font-weight: 400; color: inherit;">Taylor M., 28 years old</span>
-</div>
-</div>
-</div>
-</div>
-</div><div class="frame-image-break-section">
-
-</div><div class="frame-benefits-section" style="display: flex; flex-direction: column; gap: 10.0px; padding: 80.0px 40.0px 120.0px 40.0px; background-color: rgba(255, 255, 255, 1.0);">
-<div class="frame-content" style="display: flex; flex-direction: column; gap: 160.0px;">
-<div class="frame-header" style="display: flex; flex-direction: row; align-items: center; gap: 50.0px;">
-<span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 60.0px; font-weight: 400; color: inherit;">Smart Finance for everyone</span><span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 16.0px; font-weight: 400; color: inherit;">At Noble Finance, we believe that financial confidence should be accessible to everyone—whether you’re a solo entrepreneur, managing a growing family, or running a small business.</span>
-</div><div class="frame-3-column" style="display: flex; flex-direction: row; align-items: center; gap: 20.0px;">
-<div class="frame-call-out-1" style="display: flex; flex-direction: column; gap: 30.0px; padding: 20.0px 80.0px 20.0px 50.0px;">
-<div class="frame-image">
-
-</div><span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 30.0px; font-weight: 400; color: inherit;">For Freelancers</span><span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 16.0px; font-weight: 400; color: inherit;">Simplicity & Control</span><span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 16.0px; font-weight: 400; color: inherit;">Stay in charge of your income with seamless expense tracking, automated deductions, and smart tax strategies—so you can focus on doing what you love.</span>
-</div><div class="frame-call-out-2" style="display: flex; flex-direction: column; gap: 30.0px; padding: 20.0px 0px 20.0px 50.0px;">
-<div class="frame-image">
-
-</div><span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 30.0px; font-weight: 400; color: inherit;">For Families</span><span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 16.0px; font-weight: 400; color: inherit;">Stability & Security</span><span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 16.0px; font-weight: 400; color: inherit;">From budgeting tools to tax-saving insights, we help you plan for the future, maximize refunds, and keep your household finances running smoothly.</span>
-</div><div class="frame-call-out-3" style="display: flex; flex-direction: column; gap: 30.0px; padding: 20.0px 80.0px 20.0px 50.0px;">
-<div class="frame-image">
-
-</div><span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 30.0px; font-weight: 400; color: inherit;">For Small Businesses</span><span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 16.0px; font-weight: 400; color: inherit;">Stability & Security</span><span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 16.0px; font-weight: 400; color: inherit;">Effortless bookkeeping, payroll solutions, and expert-backed tax support—so you can spend less time on finances and more time scaling your business.</span>
-</div>
-</div>
-</div>
-</div><div class="frame-cta-section" style="display: flex; flex-direction: row; align-items: center; gap: 20.0px; padding: 50.0px 40.0px 50.0px 40.0px; background-color: rgba(255, 255, 255, 1.0);">
-<div class="frame-card" style="display: flex; flex-direction: row; align-items: center; gap: 28.040000915527344px; padding: 60.0px 60.0px 60.0px 60.0px; background-color: rgba(46, 79, 33, 1.0); border-radius: 20.0px;">
-<div class="frame-content" style="display: flex; flex-direction: column; gap: 40.0px;">
-<span class="figma-text" style="background-color: rgba(255, 255, 255, 1.0); font-size: 40.0px; font-weight: 400; color: inherit;">A custom built plan for you</span><span class="figma-text" style="background-color: rgba(255, 255, 255, 1.0); font-size: 16.0px; font-weight: 400; color: inherit;">At Noble Finances, we believe that tax filing should be seamless, accurate, and stress-free. Our approach is centered on three key pillars: simplicity, accuracy, and security.</span><div class="frame-button-white" style="display: flex; flex-direction: row; align-items: center; gap: 4.0px; padding: 12.0px 12.0px 12.0px 12.0px; background-color: rgba(255, 255, 255, 1.0); border-radius: 51.57455062866211px;">
-<span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 12.0px; font-weight: 500; color: inherit;">Learn More</span>
-</div>
-</div>
-</div><div class="frame-image" style="border-radius: 20.0px;">
-
-</div>
-</div><div class="frame-experts-section" style="display: flex; flex-direction: column; gap: 20.0px; padding: 160.0px 120.0px 160.0px 120.0px; background-color: rgba(249, 249, 249, 1.0);">
-<div class="frame-content" style="display: flex; flex-direction: column; gap: 60.0px;">
-<span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 60.0px; font-weight: 400; color: inherit;">We believe that tax filing should be seamless, accurate, and stress-free. Get started with Noble Finance today!</span><div class="frame-large-button" style="display: flex; flex-direction: row; align-items: center; gap: 10.0px; padding: 24.0px 30.0px 24.0px 30.0px; background-color: rgba(46, 79, 33, 1.0); border-radius: 88.0px;">
-<span class="figma-text" style="background-color: rgba(255, 255, 255, 1.0); font-size: 15.0px; font-weight: 500; color: inherit;">Connect with our experts</span>
-</div>
-</div>
-</div>
-</div><div class="frame-footer" style="display: flex; flex-direction: row; align-items: center; gap: 301.0px; padding: 32.0px 40.0px 32.0px 40.0px; background-color: rgba(46, 79, 33, 1.0);">
-<div class="frame-left-column" style="display: flex; flex-direction: column; gap: 236.0px;">
-<div class="frame-logo" style="display: flex; flex-direction: column; gap: 8.0px;">
-<div class="frame-noble-finances" style="background-color: rgba(255, 255, 255, 1.0);">
-
-</div>
-</div><span class="figma-text" style="background-color: rgba(212, 228, 207, 1.0); font-size: 12.0px; font-weight: 500; color: inherit;">Financial Clarity You Can Trust
-Trusted financial guidance for every stage of life and business since 1987</span>
-</div><div class="frame-right-column" style="display: flex; flex-direction: column; gap: 232.0px;">
-<div class="frame-labels" style="display: flex; flex-direction: row; align-items: center; gap: 35.0px;">
-<div class="frame-content" style="display: flex; flex-direction: row; align-items: center; gap: 11.0px;">
-<span class="figma-text" style="background-color: rgba(212, 228, 207, 1.0); font-size: 12.0px; font-weight: 500; color: inherit;">Services</span><div class="frame-button-white" style="display: flex; flex-direction: row; align-items: center; gap: 4.0px; padding: 12.0px 12.0px 12.0px 12.0px; background-color: rgba(255, 255, 255, 1.0); border-radius: 51.57455062866211px;">
-<span class="figma-text" style="background-color: rgba(45, 79, 32, 1.0); font-size: 12.0px; font-weight: 500; color: inherit;">Book An Appointment</span>
-</div>
-</div>
-</div><span class="figma-text" style="background-color: rgba(212, 228, 207, 1.0); font-size: 12.0px; font-weight: 500; color: inherit;">© 2025 All Rights Reserved</span>
-</div>
-</div>
-</div>
+  <div class="hero-card">
+    <span class="badge">NOBLE FINANCES</span>
+    <h1>Financial Clarity You Can Trust</h1>
+    <p>Trusted financial guidance for every stage of life and business since 1987.</p>
+    <button class="btn">Connect with our experts</button>
+  </div>
 </body>
 </html>
