@@ -1,10 +1,10 @@
 :root {
-  --color-bg-main: #a0f1bd;
-  --color-bg-dark: #2e4f21;
-  --color-accent: #d2f8dc;
-  --color-text-main: #2d4f20;
+  --color-bg-main: #fef2f2;
+  --color-bg-dark: #c11f1f;
+  --color-accent: #fca5a5;
+  --color-text-main: #991b1b;
   --color-text-light: #ffffff;
-  --color-text-muted: #7d9276;
+  --color-text-muted: #fecaca;
   --spacing-sm: 8px;
   --spacing-md: 16px;
   --spacing-lg: 24px;
