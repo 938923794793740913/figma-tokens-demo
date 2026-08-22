@@ -1,7 +1,6 @@
 :root {
-  --color-primary: #c11f1f;
-  --color-secondary: #d9d9d9;
-  --color-bg: #ffffff;
-  --spacing-card-padding: 32px;
-  --radius-button: 24px;
+  --rect-color: #c11f1f;
+  --rect-width: 546.0px;
+  --rect-height: 233.0px;
+  --rect-radius: 24.0px;
 }
