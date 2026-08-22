@@ -3,31 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Live Figma Sync with Text</title>
+  <title>Centered Overlay Text Figma Import</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       background-color: #ffffff;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      padding: 40px;
+      padding: 20px;
     }
-    .canvas-wrapper {
+    .canvas-container {
+      position: relative;
       display: flex;
-      flex-direction: column;
-      align-items: center;
       justify-content: center;
-      max-width: 800px;
+      align-items: center;
       width: 100%;
+      min-height: 400px;
     }
   </style>
 </head>
 <body>
-  <div class="canvas-wrapper">
-    <div class="figma-shape" style="width: 762.0px; height: 325.0px; background-color: rgba(31, 96, 193, 1.0); border-radius: 162.5px; margin: 15px auto; display: flex; justify-content: center; align-items: center;"></div><div class="figma-text" style="color: rgb(255, 255, 255); font-size: 36.0px; font-weight: 400; margin: 15px 0; text-align: center;">thanks Hermes.
+  <div class="canvas-container">
+    <div style="position: relative; width: 762.0px; height: 325.0px; background-color: rgba(31, 96, 193, 1.0); border-radius: 162.5px; display: flex; justify-content: center; align-items: center;"></div><div style="position: absolute; z-index: 10; color: #ffffff; font-size: 36.0px; font-weight: 400; text-align: center; white-space: pre-wrap; max-width: 80%;">thanks Hermes.
 you are the best agent in the world.</div>
   </div>
 </body>
