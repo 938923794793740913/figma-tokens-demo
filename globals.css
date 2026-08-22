@@ -1,6 +1,25 @@
 :root {
-  --rect-color: #c11f1f;
+  /* 1. Color Tokens */
+  --color-primary: #c11f1f;
+  --color-surface-bg: #ffffff;
+  --color-text-main: #0f172a;
+  --color-text-muted: #64748b;
+
+  /* 2. Spacing & Layout Tokens */
   --rect-width: 546.0px;
   --rect-height: 233.0px;
-  --rect-radius: 24.0px;
+  --spacing-padding-lg: 32px;
+  --spacing-gap-md: 16px;
+
+  /* 3. Border & Radius Tokens */
+  --radius-button: 24.0px;
+  --radius-card: 20px;
+
+  /* 4. Typography Tokens */
+  --font-size-title: 2rem;
+  --font-weight-bold: 800;
+
+  /* 5. Shadow & Elevation Tokens */
+  --shadow-elevation-lg: 0 20px 40px -15px rgba(0, 0, 0, 0.3);
+  --shadow-button-glow: 0 10px 25px -5px #c11f1f80;
 }
