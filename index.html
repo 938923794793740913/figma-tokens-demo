@@ -3,27 +3,31 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pure Figma Canvas Element</title>
+  <title>Figma Live Import</title>
   <link rel="stylesheet" href="./globals.css">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       background-color: #ffffff;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
+      padding: 20px;
     }
-    .figma-element {
-      width: var(--rect-width, 546px);
-      height: var(--rect-height, 233px);
-      background-color: var(--rect-color, #c11f1f);
-      border-radius: var(--rect-radius, 24px);
-      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    .canvas-root {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
     }
   </style>
 </head>
 <body>
-  <div class="figma-element"></div>
+  <div class="canvas-root">
+    <div class="node-element" style="width: 1440.0px; height: 1024.0px; background-color: rgba(255, 255, 255, 1.0); border-radius: 0px; margin: 10px; display: flex; justify-content: center; align-items: center; transition: all 0.3s ease;"><span style="color: #ffffff; font-weight: 600;">Desktop - 1</span></div>
+  </div>
 </body>
 </html>
