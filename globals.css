@@ -1,0 +1,14 @@
+:root {
+  --color-bg-main: #a0f1bd;
+  --color-bg-card: #f9f9f9;
+  --color-bg-dark: #2e4f21;
+  --color-accent: #d2f8dc;
+  --color-text-main: #2d4f20;
+  --color-text-light: #ffffff;
+  --color-text-muted: #4f6348;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --radius-btn: 12px;
+  --radius-card: 20px;
+}
