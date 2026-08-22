@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Centered Overlay Text Figma Import</title>
+  <title>Figma Live Import - Typography Sync</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -13,21 +16,40 @@
       align-items: center;
       min-height: 100vh;
       padding: 20px;
+      font-family: 'Inter', sans-serif;
     }
     .canvas-container {
       position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 100%;
-      min-height: 400px;
+      width: 762px;
+      height: 325px;
+    }
+    .figma-shape {
+      position: absolute;
+      width: 762px;
+      height: 325px;
+      background-color: rgb(31, 96, 193);
+      border-radius: 162.5px;
+    }
+    .figma-text {
+      position: absolute;
+      z-index: 10;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      font-size: 32px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 1.4;
+      padding: 0 40px;
     }
   </style>
 </head>
 <body>
   <div class="canvas-container">
-    <div style="position: relative; width: 762.0px; height: 325.0px; background-color: rgba(31, 96, 193, 1.0); border-radius: 162.5px; display: flex; justify-content: center; align-items: center;"></div><div style="position: absolute; z-index: 10; color: #ffffff; font-size: 36.0px; font-weight: 400; text-align: center; white-space: pre-wrap; max-width: 80%;">thanks Hermes.
-you are the best agent in the world.</div>
+    <div class="figma-shape"></div>
+    <div class="figma-text">thanks Hermes.<br>you are the best agent in the world.</div>
   </div>
 </body>
 </html>
