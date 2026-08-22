@@ -3,87 +3,192 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noble Finances - Figma Tokens Live Sync</title>
+  <title>Noble Finances - Full Figma Landing Page</title>
   <link rel="stylesheet" href="./globals.css">
   <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      background-color: var(--color-bg-main, #a0f1bd);
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: var(--color-bg-secondary, #f9f9f9);
       color: var(--color-text-main, #2d4f20);
-      font-family: system-ui, -apple-system, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      margin: 0;
-      padding: 20px;
-      transition: all 0.4s ease;
+      line-height: 1.5;
     }
 
-    .card {
+    /* NAV */
+    nav {
+      background-color: var(--color-bg-main, #a0f1bd);
+      padding: var(--spacing-md, 16px) 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-weight: 800;
+      font-size: 1.25rem;
+      color: var(--color-text-main, #2d4f20);
+    }
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    .nav-btn {
       background-color: var(--color-bg-dark, #2e4f21);
       color: var(--color-text-light, #ffffff);
-      border-radius: var(--radius-card, 20px);
-      padding: var(--spacing-lg, 24px);
-      max-width: 360px;
-      width: 100%;
-      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      transition: all 0.4s ease;
+      padding: 10px 20px;
+      border-radius: var(--radius-btn, 12px);
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
     }
 
-    .badge {
+    /* HERO */
+    .hero {
+      background-color: var(--color-bg-main, #a0f1bd);
+      padding: 80px 5% 100px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 800;
+      max-width: 800px;
+      margin: 0 auto 20px;
+      color: var(--color-text-main, #2d4f20);
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 0 auto 30px;
+      color: var(--color-text-main, #2d4f20);
+    }
+    .hero-btn {
+      background-color: var(--color-bg-dark, #2e4f21);
+      color: var(--color-text-light, #ffffff);
+      padding: 16px 32px;
+      font-size: 1.1rem;
+      border-radius: var(--radius-btn, 12px);
+      border: none;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    /* SERVICES */
+    .services {
+      padding: 80px 5%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .services h2 {
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      color: var(--color-text-main, #2d4f20);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    .service-card {
+      background-color: var(--color-bg-dark, #2e4f21);
+      color: var(--color-text-light, #ffffff);
+      padding: 30px;
+      border-radius: var(--radius-card, 20px);
+    }
+    .service-card h3 {
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+    }
+    .service-card p {
+      color: var(--color-text-muted, #d4e4cf);
+      font-size: 0.95rem;
+    }
+
+    /* CTA SECTION */
+    .cta {
+      background-color: var(--color-bg-dark, #2e4f21);
+      color: var(--color-text-light, #ffffff);
+      margin: 60px 5%;
+      padding: 60px;
+      border-radius: var(--radius-card, 20px);
+      text-align: center;
+    }
+    .cta h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    .cta-btn {
       background-color: var(--color-accent, #d2f8dc);
       color: var(--color-text-main, #2d4f20);
-      display: inline-block;
-      padding: 4px 12px;
-      border-radius: 20px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      margin-bottom: var(--spacing-md, 16px);
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-
-    .title {
-      margin: 0 0 var(--spacing-sm, 8px) 0;
-      font-size: 1.5rem;
-      font-weight: 800;
-      line-height: 1.2;
-    }
-
-    .desc {
-      color: var(--color-text-muted, #7d9276);
-      font-size: 0.9rem;
-      line-height: 1.5;
-      margin-bottom: var(--spacing-lg, 24px);
-    }
-
-    .btn {
-      background-color: var(--color-bg-main, #a0f1bd);
-      color: var(--color-text-main, #2d4f20);
-      border: none;
-      padding: var(--spacing-md, 16px) var(--spacing-lg, 24px);
-      border-radius: var(--radius-btn, 12px);
-      font-weight: 700;
+      padding: 16px 32px;
       font-size: 1rem;
+      border-radius: var(--radius-btn, 12px);
+      border: none;
+      font-weight: 700;
       cursor: pointer;
-      width: 100%;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 14px 0 rgba(0,0,0,0.1);
+      margin-top: 20px;
     }
 
-    .btn:hover {
-      transform: translateY(-2px);
-      opacity: 0.95;
+    /* FOOTER */
+    footer {
+      background-color: var(--color-bg-dark, #2e4f21);
+      color: var(--color-text-muted, #d4e4cf);
+      padding: 40px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid rgba(255,255,255,0.1);
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <span class="badge">Noble Finances</span>
-    <h1 class="title">Financial Clarity You Can Trust</h1>
-    <p class="desc">آزمایش زنده همگام‌سازی اتوماتیک توکن‌های فیگما با ایجنت هرمس.</p>
-    <button class="btn">Connect with experts</button>
-  </div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">Noble Finances</div>
+    <div class="nav-links">
+      <span>Services</span>
+      <button class="nav-btn">Connect with our experts</button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <h1>Financial Clarity You Can Trust</h1>
+    <p>Trusted financial guidance for every stage of life and business since 1987</p>
+    <button class="hero-btn">Connect with our experts</button>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section class="services">
+    <h2>Let us handle the numbers, so you can handle your success.</h2>
+    <div class="grid">
+      <div class="service-card">
+        <h3>Tax Preparation & Filing</h3>
+        <p>Accurately prepare and file personal and business tax returns to maximize deductions and ensure compliance.</p>
+      </div>
+      <div class="service-card">
+        <h3>IRS Audit Assistance</h3>
+        <p>Offer expert guidance and representation to resolve tax audits and disputes with confidence.</p>
+      </div>
+      <div class="service-card">
+        <h3>Bookkeeping & Accounting</h3>
+        <p>Maintain organized financial records and provide clear reports to support business growth and financial health.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="cta">
+    <h2>A custom built plan for you</h2>
+    <p>At Noble Finances, we believe that tax filing should be seamless, accurate, and stress-free.</p>
+    <button class="cta-btn">Get Started Today</button>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div>Noble Finances</div>
+    <div>© 2025 All Rights Reserved</div>
+  </footer>
+
 </body>
 </html>
