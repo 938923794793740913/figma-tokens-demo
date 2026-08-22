@@ -3,75 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Figma Design Token Engine</title>
+  <title>Figma Rectangle Token Sync</title>
   <link rel="stylesheet" href="./globals.css">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      background-color: #0f172a;
-      color: #ffffff;
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #ffffff;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      padding: 20px;
     }
-    .token-card {
-      background-color: var(--color-bg, #ffffff);
-      color: #0f172a;
-      padding: var(--spacing-card-padding, 32px);
-      border-radius: 20px;
-      max-width: 420px;
-      width: 100%;
-      text-align: center;
-      box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
-    }
-    .token-badge {
-      background-color: var(--color-secondary, #d9d9d9);
-      color: #334155;
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 0.8rem;
-      font-weight: 700;
-      display: inline-block;
-      margin-bottom: 20px;
-    }
-    .token-title {
-      font-size: 1.8rem;
-      font-weight: 800;
-      margin-bottom: 12px;
-    }
-    .token-desc {
-      color: #64748b;
-      font-size: 0.95rem;
-      line-height: 1.5;
-      margin-bottom: 28px;
-    }
-    .token-btn {
-      background-color: var(--color-primary, #c11f1f);
-      color: #ffffff;
-      border: none;
-      padding: 16px 28px;
-      border-radius: var(--radius-button, 24px);
-      font-weight: 700;
-      font-size: 1rem;
-      cursor: pointer;
-      width: 100%;
-      transition: all 0.3s ease;
-    }
-    .token-btn:hover {
-      opacity: 0.9;
-      transform: translateY(-2px);
+    .figma-rectangle {
+      width: var(--rect-width, 546px);
+      height: var(--rect-height, 233px);
+      background-color: var(--rect-color, #c11f1f);
+      border-radius: var(--rect-radius, 24px);
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     }
   </style>
 </head>
 <body>
-  <div class="token-card">
-    <span class="token-badge">Figma Tokens Sync</span>
-    <h1 class="token-title">Design System Engine</h1>
-    <p class="token-desc">این کامپوننت متغیرهای رنگ (--color-primary) و گردی دکمه‌ها را مستقیم از فیگما می‌خواند.</p>
-    <button class="token-btn">دکمه زنده متغیر فیگما</button>
-  </div>
+  <div class="figma-rectangle"></div>
 </body>
 </html>
